@@ -12,6 +12,6 @@ Tap to begin."
 
 This was an app I worked on and had on the Apple App Store for several years.
 
-I have since taken it down (it's expensive to keep apps on there!), but I wanted to just upload the code aspect of the app on here for memory's sake.
+I have since taken it down (it's expensive to keep apps on there!), but I wanted to just upload the code on here for memory's sake.
 
 Due to the amount of space the files take up when including the artwork for the app, those have been removed. 
