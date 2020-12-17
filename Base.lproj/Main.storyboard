@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Menu View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MenuViewController" customModule="The_American_Refugee" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Title Page Official 2" translatesAutoresizingMaskIntoConstraints="NO" id="6kJ-xN-fGX">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="center" horizontalHuggingPriority="108" verticalHuggingPriority="32" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4eC-As-ecf">
+                                <rect key="frame" x="420.5" y="0.0" width="126" height="94"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="126" id="Rs2-rW-ZOW"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="MAYBE START"/>
+                                <connections>
+                                    <action selector="startGame" destination="BYZ-38-t0r" eventType="touchUpInside" id="5IR-mJ-o5J"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="85o-Te-EGc">
+                                <rect key="frame" x="341.5" y="94" width="151" height="93.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="151" id="XQa-hd-SQE"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="MAYBE DONATE"/>
+                                <connections>
+                                    <action selector="goToDonate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yt1-cs-gw3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RBQ-AO-7sI" userLabel="Inspirationbutton">
+                                <rect key="frame" x="215" y="187.5" width="237" height="94"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="237" id="EjW-vu-QDH"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="MAYBE INSPIRATION"/>
+                                <connections>
+                                    <action selector="goToInspiration" destination="BYZ-38-t0r" eventType="touchUpInside" id="yHB-EV-3ya"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R8i-jE-VDg">
+                                <rect key="frame" x="162" y="281.5" width="176" height="93.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="176" id="sOK-cy-Nku"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="MAYBE CREDITS"/>
+                                <connections>
+                                    <action selector="goToCredits" destination="BYZ-38-t0r" eventType="touchUpInside" id="v0s-op-X9X"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4eC-As-ecf" firstAttribute="height" secondItem="RBQ-AO-7sI" secondAttribute="height" id="0t2-qv-f9I"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="6kJ-xN-fGX" secondAttribute="bottom" id="9Vu-uB-N0g"/>
+                            <constraint firstItem="4eC-As-ecf" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.25" id="EEJ-Ky-OHL"/>
+                            <constraint firstItem="RBQ-AO-7sI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GYQ-d4-t6V"/>
+                            <constraint firstItem="R8i-jE-VDg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.75" id="ILD-z5-Bal"/>
+                            <constraint firstItem="4eC-As-ecf" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Lve-42-B9J"/>
+                            <constraint firstItem="6kJ-xN-fGX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PWd-kB-bNk"/>
+                            <constraint firstItem="85o-Te-EGc" firstAttribute="height" secondItem="RBQ-AO-7sI" secondAttribute="height" id="PXL-SO-f71"/>
+                            <constraint firstItem="R8i-jE-VDg" firstAttribute="top" secondItem="RBQ-AO-7sI" secondAttribute="bottom" id="RjP-f2-roR"/>
+                            <constraint firstAttribute="trailing" secondItem="6kJ-xN-fGX" secondAttribute="trailing" id="Wxh-YA-dNp"/>
+                            <constraint firstItem="85o-Te-EGc" firstAttribute="bottom" secondItem="RBQ-AO-7sI" secondAttribute="top" id="cff-f7-dp6"/>
+                            <constraint firstItem="R8i-jE-VDg" firstAttribute="height" secondItem="RBQ-AO-7sI" secondAttribute="height" id="dJm-rf-Tni"/>
+                            <constraint firstItem="6kJ-xN-fGX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fDX-P6-1bc"/>
+                            <constraint firstItem="85o-Te-EGc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1.25" id="h5M-Nq-EGu"/>
+                            <constraint firstItem="4eC-As-ecf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1.45" id="nuO-WT-mAL"/>
+                            <constraint firstItem="4eC-As-ecf" firstAttribute="bottom" secondItem="85o-Te-EGc" secondAttribute="top" id="s1x-MZ-F98"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="SHI-FO-WUB"/>
+                    <connections>
+                        <outlet property="creditsbutton" destination="R8i-jE-VDg" id="Iff-Am-Liy"/>
+                        <outlet property="donatebutton" destination="85o-Te-EGc" id="A7b-wW-bPo"/>
+                        <outlet property="inspirationbutton" destination="RBQ-AO-7sI" id="QYc-RM-g8D"/>
+                        <outlet property="startbutton" destination="4eC-As-ecf" id="y4V-AN-B9K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101.19940029985008" y="127.2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MAYBE CREDITS" width="489" height="96"/>
+        <image name="MAYBE DONATE" width="447" height="96"/>
+        <image name="MAYBE INSPIRATION" width="783" height="90"/>
+        <image name="MAYBE START" width="339" height="90"/>
+        <image name="Title Page Official 2" width="2001" height="1125"/>
+    </resources>
+</document>
