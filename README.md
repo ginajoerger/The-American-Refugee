@@ -8,7 +8,7 @@ What would you do in this situation? If you were a refugee, what choices would y
 
 Tap to begin."
 
-+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++
 
 This was an app I worked on and had on the Apple App Store for several years.
 
